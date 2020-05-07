@@ -1,40 +1,19 @@
 import React from "react"
-import {Card,CardHeader,CardBody,Col,Row,Table } from 'reactstrap'; 
+import { FormGroup, Label, Button, Input } from "reactstrap";
 
-function Employee(props){
+const Employee = function(props){
 
     return (
-        <div>
-        <div className="flex-large">
-            <h2>Employee Screen</h2>
-        </div>
-        <Row>
-            <Col>
-                <Card>
-                    <CardHeader>
-                        <i className = "fa fa-align-justify"></i>
-                    </CardHeader>
-                    <CardBody>
-                        <Table>
-                            <thead>
-                                <tr>
-                                    <th>Id</th>
-                                    <th>Name</th>
-                                    <th>Designation</th>
-                                </tr>
-                            </thead>
-                            <tbody>  
-                                <tr>
-                                    <th>1</th>
-                                    <th>A</th>
-                                    <th>Developer</th>
-                                </tr>   
-                            </tbody>  
-                        </Table>
-                    </CardBody>
-                </Card>
-            </Col>
-        </Row>
+        <div className="login-form">
+            <FormGroup className="mb-3">
+                <Label>Name</Label>
+                <Input type="text" placeholder="Name" value = {props.empName} onChange = {props.handleName}/>
+            </FormGroup>   
+            <FormGroup className="mb-3">
+                <Label>Salery</Label>
+                <Input type="text" placeholder="Salery" value = {props.empSalary} onChange = {props.handleSalery}/>  
+            </FormGroup>  
+            <Button onClick = {props.deleteHandler}>Delete</Button>
     </div>
     )
 }
