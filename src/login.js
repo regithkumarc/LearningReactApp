@@ -35,7 +35,6 @@ class Login extends React.Component{
               <Container> 
                 <Row className="justify-content-center"> 
                    <Col> 
-                  {/* <Col md="12" lg="10" xl="8"> */}
                     <Card className="mx-2">  
                       <CardBody className="p-4">
                         <Form onSubmit = { this.onSubmit } >  
