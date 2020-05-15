@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import * as serviceWorker from './serviceWorker';
+import ErrorHandling from './error/errorHandling';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ErrorHandling />
   </React.StrictMode>,
   document.getElementById('root')
 );

@@ -1,5 +1,6 @@
 import React from 'react'
 import { Button,Input, FormGroup, Label} from 'reactstrap'; 
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './login.css'
 
 const Login = (props) => {
