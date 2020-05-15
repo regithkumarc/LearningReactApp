@@ -1,10 +1,10 @@
 import React from 'react'
 import {Card,CardHeader,CardBody,Col,Row } from 'reactstrap'; 
 import { Table } from 'react-bootstrap'; 
-import autoparts from './autoparts.json'
+import autoparts from '../autoparts.json'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-class Employee extends React.Component {
+class EmployeeMockJson extends React.Component {
     render(){
         return(
             <div>
@@ -46,4 +46,4 @@ class Employee extends React.Component {
         )
     }
 }
-export default Employee;
+export default EmployeeMockJson;

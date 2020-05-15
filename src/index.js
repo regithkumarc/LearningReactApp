@@ -2,11 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
-import ErrorHandling from './error/errorHandling';
+import EmployeeMockJson from './autoPartsJson/employeeMockJson';
 
 ReactDOM.render(
   <React.StrictMode>
-    <ErrorHandling />
+    <EmployeeMockJson />
   </React.StrictMode>,
   document.getElementById('root')
 );
